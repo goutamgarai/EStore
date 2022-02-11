@@ -1,0 +1,7 @@
+dotnet tool install --global dotnet-ef
+dotnet tool list -g
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef database update
+
+# to create a proper git ignore file.
+dotnet new gitignore
